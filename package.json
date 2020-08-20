@@ -36,7 +36,7 @@
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3",
 
-    "@ionic/app-scripts": "5.0.0",
+    "@ionic/app-scripts": "2.x",
     "typescript": "3.9.7"
   },
   "devDependencies": {
