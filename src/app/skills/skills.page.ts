@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-skills',
+  templateUrl: 'skills.page.html',
+  styleUrls: ['skills.page.scss']
 })
 export class SkillsPage {
 
   constructor() {}
-
+  
 }

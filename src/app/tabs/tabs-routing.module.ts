@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: 'skills',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.SkillsPageModule)
+        loadChildren: () => import('../skills/skills.module').then(m => m.SkillsPageModule)
       },
       {
         path: 'bio',

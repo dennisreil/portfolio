@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SkillsPage } from './tab1.page';
+import { SkillsPage } from './skills.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { SkillsPageRoutingModule } from './tab1-routing.module';
+import { SkillsPageRoutingModule } from './skills-routing.module';
 
 @NgModule({
   imports: [
