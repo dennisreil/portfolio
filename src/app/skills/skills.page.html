@@ -1,8 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title style="text-align:center">
+    <h1 style="text-align:center">
       Skills
-    </ion-title>
+    </h1>
   </ion-toolbar>
 </ion-header>
 
@@ -13,33 +13,25 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
-    <ion-card-header style="text-align:center">
-      <ion-card-title><h1>Work in Progress</h1></ion-card-title>
-      <h2>Stay tuned</h2>
-      <ion-spinner style="text-align:center" name="dots" color="tertiary"></ion-spinner>
-    </ion-card-header>
-  </ion-card>
-
-
-  <!-- skills Headers -->
-<ion-grid>
-  <ion-row>
-
-      <ion-col>
-        <ion-card size="6" size-lg offset="3"> 
-          <h2 style="text-align:center">Soft Skills</h2>
-        </ion-card>
+  <ion-grid>
+    <ion-row>
+        <ion-col>
+            <ion-button 
+            size="6" color="light" expand="block" (click)="softSkill($event)">
+            <h2 class="style">Soft</h2>
+          </ion-button>
+        </ion-col>
+  
+        <ion-col>
+          <ion-button 
+          size="3" color="light" expand="block" (click)="hardSkill($event)">
+          <h2 class="style">Hard</h2>
+        </ion-button>
       </ion-col>
-
-        <ion-col><ion-card size="3" size-lg>
-          <h2 style="text-align:center">Hard Skills</h2>
-        </ion-card>
-      </ion-col>
-
-  </ion-row>
-</ion-grid>
+    </ion-row>
+  </ion-grid>
 
 
   <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
 </ion-content>
+
