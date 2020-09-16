@@ -1,3 +1,26 @@
 git add .
 git commit -am 'HEROKU DEPLOYMENT'
 git push heroku master
+
+
+
+reset to branch-overwtire local
+
+git fetch --all
+git reset --hard
+
+
+
+Ionic Native Plugins
+npm i @ionic-native/file
+npm i @ionic-native/file-opener
+npm i @ionic-native/file-transfer
+npm i @ionic-native/document-viewer
+
+
+Ionic Cordova Plugins
+ionic cordova plugin add cordova-plugin-file
+ionic cordova plugin add cordova-plugin-file-opener2
+ionic cordova plugin add cordova-plugin-file-transfer
+ionic cordova plugin add cordova-plugin-document-viewer
+ionic cordova plugin add cordova-plugin-in-app-browser
