@@ -17,7 +17,7 @@ const routes: Routes = [
       },
       {
         path: 'proj',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.ProjPageModule)
+        loadChildren: () => import('../projects/proj.module').then(m => m.ProjPageModule)
       },
       {
         //redirects to Home IF loading blank path | localhost:4200

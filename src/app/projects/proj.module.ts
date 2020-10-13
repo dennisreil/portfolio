@@ -3,10 +3,10 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ProjPage } from './tab3.page';
+import { ProjPage } from './proj.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { ProjPageRoutingModule } from './tab3-routing.module'
+import { ProjPageRoutingModule } from './proj-routing.module'
 
 @NgModule({
   imports: [
