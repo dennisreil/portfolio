@@ -9,15 +9,15 @@ const routes: Routes = [
     children: [
       {
         path: 'skills',
-        loadChildren: () => import('../skills/skills.module').then(m => m.SkillsPageModule)
+        loadChildren: () => import('../pages/skills/skills.module').then(m => m.SkillsPageModule)
       },
       {
         path: 'bio',
-        loadChildren: () => import('../bio/bio.module').then(m => m.BioPageModule)
+        loadChildren: () => import('../pages/bio/bio.module').then(m => m.BioPageModule)
       },
       {
         path: 'proj',
-        loadChildren: () => import('../projects/proj.module').then(m => m.ProjPageModule)
+        loadChildren: () => import('../pages/projects/proj.module').then(m => m.ProjPageModule)
       },
       {
         //redirects to Home IF loading blank path | localhost:4200

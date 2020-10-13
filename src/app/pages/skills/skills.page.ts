@@ -1,6 +1,6 @@
 import { Component  } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
-import { PopoverComponent } from '../popover/popover.component';
+import { PopoverComponent } from '../../popover/popover.component';
 
 @Component({
   selector: 'app-skills',
