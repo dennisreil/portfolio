@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { BioPopoverComponent } from '../bio/bioPopover/bioPopover.component';
 
 @Component({
   selector: 'app-bio',
@@ -7,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class BioPage {
 
-  constructor() {}
+  constructor(public popoverController: PopoverController) {}
+
+  async bio(eve, bio:string) {
+    let bioPop = await this.popoverController.create({
+      component: BioPopoverComponent,
+      componentProps: {bio},
+      cssClass: 'popOver',
+      event: eve,
+      translucent: true
+    });
+
+    return await bioPop.present();
+  }
 
 }

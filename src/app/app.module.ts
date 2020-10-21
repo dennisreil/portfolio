@@ -11,11 +11,17 @@ import { AppComponent } from './app.component';
 
 import { ProjPopoverComponent } from './pages/projects/projPopover/projPopover.component';
 import { SkillsPopoverComponent } from './pages/skills/skillsPopover/skillsPopover.component';
+import { BioPopoverComponent } from './pages/bio/bioPopover/bioPopover.component';
 
 
 @NgModule({
-  declarations: [AppComponent, SkillsPopoverComponent, ProjPopoverComponent],
-  entryComponents: [ SkillsPopoverComponent, ProjPopoverComponent ],
+  declarations: [AppComponent,
+    SkillsPopoverComponent, 
+    ProjPopoverComponent,
+    BioPopoverComponent],
+  entryComponents: [ SkillsPopoverComponent, 
+    ProjPopoverComponent, 
+    BioPopoverComponent ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
