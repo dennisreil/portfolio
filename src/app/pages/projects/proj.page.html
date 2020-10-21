@@ -12,13 +12,88 @@
       <ion-title size="large">Projects</ion-title>
     </ion-toolbar>
   </ion-header>
-  
-  <ion-card>
+
+
+<ion-card style="background-color: rgba(1, 39, 28, 0.185);">
+    <ion-grid>
+      <ion-row>
+          <ion-col>
+            <ion-button 
+            size="6" color="light" expand="block">
+                <h2>Timely App</h2>
+          </ion-button>
+
+          <ion-card style="background-color: rgba(216, 213, 213, 0.062);">
+          
+          <ion-row style="display: flex; justify-content: center;">
+              <ul>REACT</ul>
+              <ul>JAVA</ul>
+              <ul>MySQL</ul>
+        </ion-row>
+      </ion-card>
+
+        <ion-row style="display: flex; text-align: center;">
+        <p>Timely was my Bethel Tech's final project. As a team of 5 spanning 3 timezones (one being India), the goal was to present an application that would use the past 4 weeks of input sales to render a weeks worth of projected sales.</p>
+        <p>As a user, you could input the percentage for labor cost. This input value, rendered to a percentage multiplied by the forcasted sales, would generate your labor cost. This would enable you to see how much money in labor you have to spend without going over labor cost projections.</p>
+        </ion-row>
+
+        <br>
+        
+          <ion-card button color="light" expand="block" ion-button (click)="timelyFe()">
+            <ion-row class="style" style="display: flex; justify-content: center; align-content: center; height: 1.5em;">
+              Link to Timely Front-End Github Repo
+            </ion-row>
+          </ion-card>
+          <ion-card button color="light" expand="block" ion-button (click)="timelyBe()">
+            <ion-row class="style" style="display: flex; justify-content: center; align-content: center; height: 1.5em;">
+              Link to Timely Back-End Github Repo
+            </ion-row>
+          </ion-card>
+
+        </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<br>
+
+<ion-card style="background-color: rgba(1, 33, 39, 0.185);">
+  <ion-grid>
+    <ion-row>
+        <ion-col>
+          <ion-button 
+          size="6" color="light" expand="block">
+              <h2>E-Book App</h2>
+        </ion-button>
+
+        <ion-card style="background-color: rgba(216, 213, 213, 0.062)"> 
+          <ion-row style="display: flex; justify-content: center;">
+            <ul>Angular</ul>
+          </ion-row>
+      </ion-card>
+
+       <ion-row style="display: flex; justify-content: center;">
+            <p>E-Book style App with routing between chapters, pages, forward & back</p>
+        </ion-row> 
+ 
+        <br>
+
+          <ion-card button size="3" color="light" expand="block" ion-button (click)="ebookUrl()">
+            <ion-row class="style" style="display: flex; justify-content: center; align-content: center; height: 1.5em;">
+              Link to E-Book Github Repo
+            </ion-row>
+          </ion-card>
+
+        </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+ 
     <ion-card-header style="text-align:center">
-      <ion-card-title><h1>Work in Progress</h1></ion-card-title>
-      <h2>Stay tuned</h2>
+      <h4>More to Come</h4>
       <ion-spinner style="text-align:center" name="dots" color="tertiary"></ion-spinner>
     </ion-card-header>
-  </ion-card>
+
   
 </ion-content>
