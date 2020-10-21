@@ -1,6 +1,6 @@
 import { Component  } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
-import { PopoverComponent } from '../../popover/popover.component';
+import { SkillsPopoverComponent } from './skillsPopover/skillsPopover.component';
 
 @Component({
   selector: 'app-skills',
@@ -13,25 +13,25 @@ export class SkillsPage {
   }
 
   async hardSkill(eve, soft:string) {
-    const popover = await this.popoverController.create({
-      component: PopoverComponent,
+    let hardPopover = await this.popoverController.create({
+      component: SkillsPopoverComponent,
       componentProps: {soft},
       cssClass: 'popOver',
       event: eve,
       translucent: true
     });
-    return await popover.present();
+    return await hardPopover.present();
   }
 
   async softSkill(eve, hard:string) {
-    const popover = await this.popoverController.create({
-      component: PopoverComponent,
+    let softPopover = await this.popoverController.create({
+      component: SkillsPopoverComponent,
       componentProps: {hard},
       cssClass: 'popOver',
       event: eve,
       translucent: true
     });
 
-    return await popover.present();
+    return await softPopover.present();
   }
 }
