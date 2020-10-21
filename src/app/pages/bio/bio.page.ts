@@ -13,6 +13,7 @@ export class BioPage {
 
   async bio(eve, bio:string) {
     let bioPop = await this.popoverController.create({
+      mode: 'md',
       component: BioPopoverComponent,
       componentProps: {bio},
       cssClass: 'popOver',
