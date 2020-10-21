@@ -14,6 +14,7 @@ export class SkillsPage {
 
   async hardSkill(eve, soft:string) {
     let hardPopover = await this.popoverController.create({
+      mode: 'md',
       component: SkillsPopoverComponent,
       componentProps: {soft},
       cssClass: 'popOver',
@@ -25,6 +26,7 @@ export class SkillsPage {
 
   async softSkill(eve, hard:string) {
     let softPopover = await this.popoverController.create({
+      mode: 'md',
       component: SkillsPopoverComponent,
       componentProps: {hard},
       cssClass: 'popOver',
