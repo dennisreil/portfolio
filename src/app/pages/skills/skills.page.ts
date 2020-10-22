@@ -1,5 +1,6 @@
 import { Component  } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
+import { HobbyPopoverComponent } from './hobbyPopover/hobbyPopover.component';
 import { SkillsPopoverComponent } from './skillsPopover/skillsPopover.component';
 
 @Component({
@@ -35,5 +36,18 @@ export class SkillsPage {
     });
 
     return await softPopover.present();
+  }
+
+  async hobbyList(eve, hobbies:string) {
+    let hobbyPop = await this.popoverController.create({
+      mode: 'md',
+      component: HobbyPopoverComponent,
+      componentProps: {hobbies},
+      cssClass: 'popOver',
+      event: eve,
+      translucent: true
+    });
+
+    return await hobbyPop.present();
   }
 }

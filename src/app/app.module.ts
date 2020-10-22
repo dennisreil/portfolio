@@ -12,16 +12,19 @@ import { AppComponent } from './app.component';
 import { ProjPopoverComponent } from './pages/projects/projPopover/projPopover.component';
 import { SkillsPopoverComponent } from './pages/skills/skillsPopover/skillsPopover.component';
 import { BioPopoverComponent } from './pages/bio/bioPopover/bioPopover.component';
+import { HobbyPopoverComponent } from './pages/skills/hobbyPopover/hobbyPopover.component';
 
 
 @NgModule({
   declarations: [AppComponent,
     SkillsPopoverComponent, 
     ProjPopoverComponent,
-    BioPopoverComponent],
+    BioPopoverComponent,
+    HobbyPopoverComponent],
   entryComponents: [ SkillsPopoverComponent, 
     ProjPopoverComponent, 
-    BioPopoverComponent ],
+    BioPopoverComponent,
+    HobbyPopoverComponent ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,

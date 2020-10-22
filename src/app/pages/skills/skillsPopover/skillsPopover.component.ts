@@ -11,7 +11,8 @@ export class SkillsPopoverComponent implements OnInit {
 
   hard = ['JavaScript','React','Angular','Node.js','SQL','NoSQL', 'Ionic', 'Heroku', 'AWS', 'Terminal Navigation'];
 
-
-  constructor() { }
+  constructor(
+    
+  ) { }
   ngOnInit() {}
 }
