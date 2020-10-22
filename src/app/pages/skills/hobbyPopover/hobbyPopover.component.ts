@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-popover',
-  templateUrl: './HobbyPopover.component.html',
+  templateUrl: './hobbyPopover.component.html',
   styleUrls: ['./hobbyPopover.component.scss'],
 })
 export class HobbyPopoverComponent implements OnInit {
