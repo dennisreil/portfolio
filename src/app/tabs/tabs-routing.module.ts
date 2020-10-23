@@ -23,6 +23,7 @@ const routes: Routes = [
         //redirects to Home IF loading blank path | localhost:4200
         path: '',
         redirectTo: '/bio',
+        loadChildren: () => import('../pages/bio/bio.module').then(m => m.BioPageModule),
         pathMatch: 'full'
       }
     ]

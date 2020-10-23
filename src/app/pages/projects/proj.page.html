@@ -15,24 +15,26 @@
 
 
 <ion-card style="background-color: rgba(1, 94, 67, 0.185);">
-    <ion-grid class="text">
+    <ion-grid>
       <ion-row>
           <ion-col>
-            <ion-button style="height: fit-content;"
-            size="6" color="light" expand="block">
+            <ion-button class="header" mode="ios" size="6" color="light" expand="block">
                 <h2>Timely App</h2>
-          </ion-button>
+            </ion-button>
 
-          <ion-card style="background-color: rgba(216, 213, 213, 0.062);">
-          
-          <ion-row style="justify-content: space-around; margin-left:-3em">
-              <ul>REACT</ul>
-              <ul>JAVA</ul>
-              <ul>MySQL</ul>
-        </ion-row>
-      </ion-card>
+          <ion-card class="frame">
+            <th>
+              Framework
+            </th>
+              <ion-row class="list">
+                <ul>REACT</ul>
+                <ul>JAVA</ul>
+                <ul>MySQL</ul>
+              </ion-row>
+          </ion-card>
 
-        <ion-row class="text" style="display: flex; text-align: center;">
+
+        <ion-row class="text desc">
         <p>Timely was my Bethel Tech's final project. As a team of 5 spanning 3 timezones (one being India), the goal was to present an application that would use the past 4 weeks of input sales to render a weeks worth of projected sales.</p>
         <p>As a user, you could input the percentage for labor cost. This input value, rendered to a percentage multiplied by the forcasted sales, would generate your labor cost. This would enable you to see how much money in labor you have to spend without going over labor cost projections.</p>
         </ion-row>
@@ -61,19 +63,20 @@
   <ion-grid class="text">
     <ion-row>
         <ion-col>
-          <ion-button style="height: fit-content;"
-          size="6" color="light" expand="block">
+          <ion-button class="header" mode="ios" size="6" color="light" expand="block">
               <h2>E-Book App</h2>
         </ion-button>
 
-        <ion-card style="background-color: rgba(216, 213, 213, 0.062); justify-content: center;"> 
-
-          <ion-row style="justify-content: space-around; margin-left: -3em;">
+        <ion-card class="frame"> 
+            <th>
+              Framework
+            </th>
+          <ion-row class="list">
             <ul>Angular</ul>
           </ion-row>
       </ion-card>
 
-       <ion-row class="text" style="display: flex; text-align: center;">
+       <ion-row class="text desc">
             <p>E-Book style App with routing between chapters, pages, forward & back</p>
       </ion-row> 
  
@@ -91,7 +94,7 @@
 </ion-card>
 
  
-    <ion-card-header style="text-align:center">
+    <ion-card-header>
       <h4>More to Come</h4>
       <ion-spinner style="text-align:center" name="dots" color="tertiary"></ion-spinner>
     </ion-card-header>

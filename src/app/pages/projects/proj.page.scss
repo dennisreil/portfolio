@@ -7,14 +7,46 @@
 }
 .button:hover {
     background-color: rgba(153, 152, 152, 0.233);
-    color: white;
+    color: rgb(218, 214, 214);
 }
 
 
 .text {
     color: rgb(167, 167, 167);
     justify-content: center;
+    
 }
 .text:hover {
-    color: white;
+    color: rgb(218, 214, 214);
+}
+
+
+.header {
+    height: fit-content;
+}
+
+th {
+    display: flex; 
+    justify-content: center; 
+    font-size: 1.15em; 
+    background-color:rgba(216, 213, 213, 0.062); 
+    padding-bottom: .15em;
+}
+
+.frame {
+    background-color: rgba(216, 213, 213, 0.062); 
+    justify-content: center;
+}
+
+.list {
+    justify-content: space-around; margin-left:-3em
+}
+
+.desc {
+    display: flex; 
+    text-align: center;
+}
+
+ion-card-header {
+    text-align: center;
 }

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BioPopoverComponent implements OnInit {
 
-  bio=['hello world'];
+ 
   
   constructor() { }
   ngOnInit() {}
