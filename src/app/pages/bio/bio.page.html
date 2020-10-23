@@ -18,24 +18,30 @@
     <ion-card>
       <ion-card-header style="text-align:center">
         <ion-card-title>
-          <h1>Dennis Reil | Web Developer</h1>
+          <h1>Dennis Reil | Software Developer</h1>
         </ion-card-title>
       </ion-card-header>
     </ion-card>
 
     
-    <ion-card>
-      <ion-card-content>
+    <ion-card style="margin-bottom: 1.5px">
+      <ion-card-content style="margin-bottom: -15px;">
         <ion-card-subtitle>
           <h2 style="text-align:center;">--- Here's a little about me ---</h2>
         </ion-card-subtitle>
         <p style="text-align: center"> I am the youngest of ten children. I suppose the biggest takeaway I received from that dynamic is the importance of communication and relationship. We need people in our lives and communication is the most vital tool to maintaining healthy relationships. We didn't grow up very wealthy and from that learned the importance of hardwork and self-worth. It's not from the paycheck, but from who you believe yourself to be. I'm also a two time cancer survivor. When I was 6 and 12 years old. It was one of the greatest blessings I've experienced. It shaped much of who I am today. From this small intro, some of my greatest strengths come from these life experiences and circumstances. I believe in teamwork, communication, and valuing people. Hard things are unavoidable, but when people see hurting people, understanding is a result and from that, great things can happen. If it's broken, lets fix it. If it doesn't belong, lets remove it. There is a perfect harmony out there. Lets find it. This is why I love coding.</p>
           <br>
         <p style="text-align:center">For me, coding is:</p>
-            <ul style="text-align:center">Communication | Collaboration | Harmony | Creativity
+        <br>
+            <p style="text-align:center">Communication | Collaboration</p> 
               <br>
-                and lots of caffeine
-            </ul>
+              <p style="text-align:center">Integrity | Creativity</p>
+              <br>
+                <p style="text-align:center">and lots of caffeine</p>
+              <div style="text-align: center;">
+                <br>
+                <ion-icon name="cafe-outline" style="width: 4vw; height: 4vw; margin-left: .25em;"></ion-icon>
+              </div>
       </ion-card-content>
     </ion-card>
 
@@ -43,7 +49,7 @@
 
     <!--image wrapped in ion-content allows for text-alignment (parent div)-->
     <ion-row>
-    <ion-col text-center>
+    <ion-col >
       <ion-img style="width:auto; height: 250px" src="../../assets/images/profile.png"></ion-img>
       <ion-button expand="block" shape="round" color="medium" (click)="bio($event)">Full Bio</ion-button>
     </ion-col>

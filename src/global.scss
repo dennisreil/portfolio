@@ -27,24 +27,16 @@
 
 .popOver {
 
-    .ion-backdrop {
-    }
-.popover-wrapper {
-
-    .popover-arrow::after{
- 
-    }
 
 .popover-content {
     align-content: center;
     text-align: center;
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
+    position: absolute !important;
     margin: 0 !important;
-    height: 75vw !important;
-    width: 80vw !important;
+    width: 70vw !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     }
 
-}
 }
