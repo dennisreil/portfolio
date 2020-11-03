@@ -6,13 +6,14 @@
   </ion-toolbar>
 </ion-header>
 
+
+<!-- New project card -->
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Projects</ion-title>
     </ion-toolbar>
   </ion-header>
-
 
 <ion-card style="background-color: rgba(1, 94, 67, 0.185);">
     <ion-grid>
@@ -33,25 +34,24 @@
               </ion-row>
           </ion-card>
 
-
         <ion-row class="text desc">
-        <p>Timely was my Bethel Tech's final project. As a team of 5 spanning 3 timezones (one being India), the goal was to present an application that would use the past 4 weeks of input sales to render a weeks worth of projected sales.</p>
-        <p>As a user, you could input the percentage for labor cost. This input value, rendered to a percentage multiplied by the forcasted sales, would generate your labor cost. This would enable you to see how much money in labor you have to spend without going over labor cost projections.</p>
+        <p>Timely was my Bethel Tech's final project. As a team of 5 spanning 3 timezones (one being India), the goal was to present 
+          an application that would use the past 4 weeks of input sales to render a weeks worth of projected sales.</p>
+        <p>As a user, you could input the percentage for labor cost. This input value, rendered to a percentage multiplied 
+          by the forcasted sales, would generate your labor cost. This would enable you to see how much money in labor you 
+          have to spend without going over labor cost projections.</p>
         </ion-row>
-
         <br>
-        
-          <ion-card button color="light" expand="block" ion-button (click)="timelyFe()">
+          <ion-card color="light" expand="block" ion-button (click)="timelyFe()">
             <ion-row class="button">
               Link to Timely Front-End Github Repo
             </ion-row>
           </ion-card>
-          <ion-card button color="light" expand="block" ion-button (click)="timelyBe()">
+          <ion-card color="light" expand="block" ion-button (click)="timelyBe()">
             <ion-row class="button">
               Link to Timely Back-End Github Repo
             </ion-row>
           </ion-card>
-
         </ion-col> 
     </ion-row>
   </ion-grid>
@@ -59,6 +59,7 @@
 
 <br>
 
+<!-- New project card -->
 <ion-card style="background-color: rgba(0, 106, 124, 0.185);">
   <ion-grid class="text">
     <ion-row>
@@ -74,25 +75,59 @@
           <ion-row class="list">
             <ul>Angular</ul>
           </ion-row>
-      </ion-card>
+        </ion-card>
 
        <ion-row class="text desc">
-            <p>E-Book style App with routing between chapters, pages, forward & back</p>
+          <p>E-Book style App with routing between chapters, pages, forward & back</p>
       </ion-row> 
- 
         <br>
-
-          <ion-card button size="3" color="light" expand="block" ion-button (click)="ebookUrl()">
+          <ion-card color="light" expand="block" ion-button (click)="ebookUrl()">
             <ion-row class="button">
               Link to E-Book Github Repo
             </ion-row>
           </ion-card>
-
         </ion-col> 
     </ion-row>
   </ion-grid>
 </ion-card>
 
+
+
+<!-- New project card -->
+<ion-card style="background-color: rgba(163, 106, 0, 0.185);">
+  <ion-grid class="text">
+    <ion-row>
+        <ion-col>
+          <ion-button class="header" mode="ios" size="6" color="light" expand="block">
+              <h2>Portfolio</h2>
+        </ion-button>
+
+        <ion-card class="frame"> 
+            <th>
+              Framework
+            </th>
+          <ion-row class="list">
+            <ul>Ionic Angular</ul>
+          </ion-row>
+        </ion-card>
+
+       <ion-row class="text desc">
+          <p>Well, you're looking at it.
+          I am using github at my dev. site. I'm using two branches. A master and a dev. branch. Upon finalizing changes, 
+          I push and merge the dev. branch with my master. My master branch is synchronized with my heroku master branch. 
+          So, whenever I'm sure to merge my dev. branch with my github master, it'll automatically update my heroku master.
+          <p>I will never have to shut-down or manually update my heroku master. It's my deployed project void of tampering.</p>
+      </ion-row> 
+        <br>
+          <ion-card color="light" ion-button (click)="portUrl()">
+            <ion-row class="button">
+              Link to Portfolio Github Repo
+            </ion-row>
+          </ion-card>
+        </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-card>
  
     <ion-card-header>
       <h4>More to Come</h4>
