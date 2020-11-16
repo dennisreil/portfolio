@@ -19,5 +19,5 @@ ebookUrl(){ window.open('https://github.com/dennisreil/E-Book', '_system'); }
 
 portUrl(){ window.open('https://github.com/dennisreil/portfolio/tree/master', '_system'); }
 
-
+newsUrl(){ window.open('https://github.com/dennisreil/newsApp/tree/master', '_system'); }
 }

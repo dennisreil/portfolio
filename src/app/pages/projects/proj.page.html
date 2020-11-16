@@ -129,10 +129,38 @@
   </ion-grid>
 </ion-card>
  
-    <ion-card-header>
-      <h4>More to Come</h4>
-      <ion-spinner style="text-align:center" name="dots" color="tertiary"></ion-spinner>
-    </ion-card-header>
+<ion-card style="background-color: rgba(162, 2, 184, 0.185);">
+  <ion-grid class="text">
+    <ion-row>
+        <ion-col>
+          <ion-button class="header" mode="ios" size="6" color="light" expand="block">
+              <h2>News App</h2>
+        </ion-button>
+
+        <ion-card class="frame"> 
+            <th>
+              Framework
+            </th>
+          <ion-row class="list">
+            <ul>Ionic Angular</ul>
+          </ion-row>
+        </ion-card>
+
+       <ion-row class="text desc">
+          <p>
+            A simple News App that uses an API call to display the most recent articles from the country selected on the bottom tabs.
+          </p>
+      </ion-row> 
+        <br>
+          <ion-card color="light" ion-button (click)="newsUrl()">
+            <ion-row class="button">
+              Link to News App Github Repo
+            </ion-row>
+          </ion-card>
+        </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-card>
 
   
 </ion-content>
